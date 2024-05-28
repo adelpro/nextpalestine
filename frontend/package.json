@@ -66,6 +66,7 @@
     "unsplash-js": "^7.0.19"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
     "@tanstack/eslint-plugin-query": "^4.38.0",
     "@types/clientjs": "^0.2.2",
     "@types/cookie": "^0.6.0",
