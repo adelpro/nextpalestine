@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+* https: //www.joshwcomeau.com/css/custom-css-reset/
+* reset css
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*************************************************************/
+
+/*
+View-transitions animations
+*/
+/* Views Animation */
+::view-transition-old(root) {
+    animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
+}
+
+::view-transition-new(root) {
+    animation: fade-and-scale-in 1s ease-in-out 1 forwards;
+}
+
+@keyframes fade-and-scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-and-scale-out {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+/* Second animation */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/************************************************************/
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.code {
+    background-color: #f7fafb;
+    font-family: Menlo, Consolas, Monaco, monospace;
+    display: block;
+    padding: 8px 8px 8px 52px;
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 8px 0;
+    tab-size: 2;
+    /* white-space: pre; */
+    overflow-x: auto;
+    position: relative;
+}
+
+.code::before {
+    content: attr(data-gutter);
+    color: #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d9dddf;
+    padding: 8px;
+    min-width: 32px;
+    height: 100%;
+    text-align: right;
+}
+
+.listItemChecked,
+.listItemUnchecked {
+    position: relative;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    list-style-type: none;
+    outline: none;
+}
+
+.listItemChecked {
+    text-decoration: line-through;
+
+}
+
+.listItemUnchecked::before,
+.listItemChecked::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+    display: block;
+    background-size: cover;
+    position: absolute;
+}
+
+.listItemUnchecked[dir="rtl"]::before,
+.listItemChecked[dir="rtl"]::before {
+    left: auto;
+    right: 0;
+}
+
+.listItemUnchecked:focus::before,
+.listItemChecked:focus::before {
+    box-shadow: 0 0 0 2px #a6cdfe;
+    border-radius: 2px;
+}
+
+.listItemUnchecked::before {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.listItemChecked::before {
+    border: 1px solid rgb(61, 135, 245);
+    border-radius: 2px;
+    background-color: #3d87f5;
+    background-repeat: no-repeat;
+}
+
+.listItemChecked::after {
+    content: "";
+    cursor: pointer;
+    border-color: #fff;
+    border-style: solid;
+    position: absolute;
+    display: block;
+    top: 6px;
+    width: 3px;
+    left: 7px;
+    height: 6px;
+    transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+}
+
+
+.node-placeholder::before {
+    position: absolute;
+    content: attr(data-placeholder);
+    font: 300;
+    color: rgba(136, 136, 136, 0.6);
+}
+
+
+.StickyEditorTheme__paragraph {
+    margin: 0;
+    position: "relative";
+}
+
+.StickyNode__contentEditable {
+    min-height: 20px;
+    border: 0;
+    resize: none;
+    cursor: text;
+    font-size: 24px;
+    caret-color: rgb(5, 5, 5);
+    display: block;
+    position: relative;
+    tab-size: 1;
+    outline: 0;
+    padding: 10px;
+    user-select: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.StickyNode__placeholder {
+    font-size: 24px;
+    color: #999;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 30px;
+    left: 5px;
+    width: 120px;
+    user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.sticky-note-container {
+    position: absolute;
+    z-index: 9;
+    width: 120px;
+    display: inline-block;
+}
+
+.sticky-note {
+    line-height: 1;
+    text-align: left;
+    width: 120px;
+    margin: 25px;
+    padding: 20px 10px;
+    position: relative;
+    border: 1px solid #e8e8e8;
+    font-family: "Reenie Beanie";
+    font-size: 24px;
+    border-bottom-right-radius: 60px 5px;
+    display: block;
+    cursor: move;
+}
+
+.sticky-note:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -0px;
+    bottom: 20px;
+    width: 120px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.4);
+    transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.sticky-note.yellow {
+    border-top: 1px solid #fdfd86;
+    background: linear-gradient(135deg,
+            #ffff88 81%,
+            #ffff88 82%,
+            #ffff88 82%,
+            #ffffc6 100%);
+}
+
+.sticky-note.pink {
+    border-top: 1px solid #e7d1e4;
+    background: linear-gradient(135deg,
+            #f7cbe8 81%,
+            #f7cbe8 82%,
+            #f7cbe8 82%,
+            #e7bfe1 100%);
+}
+
+.sticky-note-container.dragging {
+    transition: none !important;
+}
+
+.sticky-note div {
+    cursor: text;
+}
+
+.sticky-note .delete {
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.sticky-note .delete:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.sticky-note .color {
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.sticky-note .color:hover {
+    opacity: 1;
+}
+
+.sticky-note .color i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-image: url("/images/color-pallette.png");
+}
+
+
+.editor__container hr {
+    border: none;
+    border-top: 2px dotted #666;
+    height: 1px;
+    margin: 20px 40px;
+}
+
+
+/* working on image resize */
+.editor-shell .editor-image .image-edit-button:hover {
+    background-color: rgba(60, 132, 244, 0.1);
+}
+
+.editor-shell .editor-image .image-resizer {
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: rgb(60, 132, 244);
+    border: 1px solid #fff;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-n {
+    top: -6px;
+    left: 48%;
+    cursor: n-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-ne {
+    top: -6px;
+    right: -6px;
+    cursor: ne-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-e {
+    bottom: 48%;
+    right: -6px;
+    cursor: e-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-se {
+    bottom: -2px;
+    right: -6px;
+    cursor: nwse-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-s {
+    bottom: -2px;
+    left: 48%;
+    cursor: s-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-sw {
+    bottom: -2px;
+    left: -6px;
+    cursor: sw-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-w {
+    bottom: 48%;
+    left: -6px;
+    cursor: w-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-nw {
+    top: -6px;
+    left: -6px;
+    cursor: nw-resize;
+}
+
+.editor-shell span.inline-editor-image {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.editor-shell .inline-editor-image img {
+    max-width: 100%;
+    cursor: default;
+}
+
+.editor-shell .inline-editor-image img.focused {
+    outline: 2px solid rgb(60, 132, 244);
+}
+
+.editor-shell .inline-editor-image img.focused.draggable {
+    cursor: grab;
+}
+
+.editor-shell .inline-editor-image img.focused.draggable:active {
+    cursor: grabbing;
+}
+
+.editor-shell .inline-editor-image .image-caption-container .tree-view-output {
+    margin: 0;
+    border-radius: 0;
+}
+
+.editor-shell .inline-editor-image.position-full {
+    margin: 1em 0 1em 0;
+}
+
+.editor-shell .inline-editor-image.position-left {
+    float: left;
+    width: 50%;
+    margin: 1em 1em 0 0;
+}
+
+.editor-shell .inline-editor-image.position-right {
+    float: right;
+    width: 50%;
+    margin: 1em 0 0 1em;
+}
+
+.editor-shell .inline-editor-image .image-edit-button {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 8px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 60px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.editor-shell .inline-editor-image .image-edit-button:hover {
+    background-color: rgba(60, 132, 244, 0.5);
+}
+
+.editor-shell .inline-editor-image .image-caption-container {
+    display: block;
+    background-color: #f4f4f4;
+    min-width: 100%;
+    color: #000;
+    overflow: hidden;
+}

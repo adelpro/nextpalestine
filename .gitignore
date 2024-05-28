@@ -1,0 +1,23 @@
+# Misc stuff
+desktop.ini
+
+# node_module
+**/node_modules/
+
+# env
+**/.env*.*
+/data/
+
+# Logs
+**/logs
+
+# Distribution files
+**/dist
+
+# Ignore dependencies file
+package-lock.json
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
+

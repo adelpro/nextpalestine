@@ -1,0 +1,105 @@
+services:
+  # Fontend: NextJs
+  frontend:
+    env_file:
+      - ./frontend/.env.production
+    container_name: nextpalestine-frontend
+    image: nextpalestine-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - DOCKER_BUILDKIT=1
+    ports:
+      - 3540:3540
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    volumes:
+      - /app/node_modules
+      # For live reload if the source or env changes
+      - ./frontend/src:/app/src
+
+    networks:
+      - app-network
+  # Backend: NestJS
+  backend:
+    container_name: nextpalestine-backend
+    image: nextpalestine-backend
+    env_file:
+      - ./backend/.env.production
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        - DOCKER_BUILDKIT=1
+    ports:
+      - 3500:3500
+    restart: unless-stopped
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - backend_v_logs:/app/logs
+      - backend_v_public:/app/public
+      - /app/node_modules
+      # For live reload if the source or env changes
+      - ./backend/src:/app/src
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://backend:3500/health || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - app-network
+
+  # Database: Mongodb
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    restart: unless-stopped
+    ports:
+      - 27018:27017
+    env_file:
+      - ./backend/.env.production
+    networks:
+      - app-network
+    volumes:
+      - mongodb_data:/data/db
+      - /etc/timezone:/etc/timezone:ro
+      #- type: bind
+      #    source: ./mongo-entrypoint
+      #    target: /docker-entrypoint-initdb.d/
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # Database UI: Mongo Express
+  mongo-express:
+    image: mongo-express:1.0.2-20-alpine3.19
+    container_name: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    env_file:
+      - ./backend/.env.production
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+volumes:
+  backend_v_logs:
+    name: nextpalestine_v_backend_logs
+  backend_v_public:
+    name: nextpalestine_v_backend_public
+  mongodb_data:
+    name: nextpalestine_v_mongodb_data
+    driver: local
+networks:
+  app-network:
+    driver: bridge
