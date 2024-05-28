@@ -16,8 +16,7 @@
     "build:prod": "cross-env NODE_ENV=production next build",
     "build:dev": "cross-env NODE_ENV=development next build",
     "start:prod": "cross-env NODE_ENV=production next start",
-    "start:dev": "cross-env NODE_ENV=development next start",
-    "prepare": "husky install"
+    "start:dev": "cross-env NODE_ENV=development next start"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.5.3",
@@ -66,7 +65,6 @@
     "unsplash-js": "^7.0.19"
   },
   "devDependencies": {
-    "husky": "^8.0.0",
     "@tanstack/eslint-plugin-query": "^4.38.0",
     "@types/clientjs": "^0.2.2",
     "@types/cookie": "^0.6.0",
