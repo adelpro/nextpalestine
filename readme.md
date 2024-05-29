@@ -2,6 +2,15 @@
 
 Effortlessly create, manage, and publish captivating blog content with nextpalestine. Our platform empowers you to focus on writing and engaging your audience, leaving the technical complexities behind.
 
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) [![Lexical Editor](https://badgen.net/badge/editor/Lexical%20Editor/purple)](https://example.com) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green)
+[![Umami](https://badgen.net/badge/analytics/Umami/orange)](https://umami.is)
+
+![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?logo=nestjs&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green) [![Signoz](https://badgen.net/badge/monitoring/Signoz/blue)](https://signoz.io)
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff) ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb217913062648a984f5bac092c1e5eb)](https://app.codacy.com/gh/adelpro/nextpalestine/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 ## Key Features
 
 Seamless Content Creation:
@@ -122,3 +131,9 @@ We welcome contributions to the nextpalestine platform! If you have suggestions 
 - The project maintainers will review the PR and may request changes. Your PR will be merged once it receives an approval from a maintainer.
 
 Thank you for your contributions – they make our project better!
+
+## Sponsors
+
+If you like this project, consider supporting me to continue developing and maintaining it!
+
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/adelbenyahia) [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/adelbenyahia) [![PayPal](https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff)](https://www.paypal.com/paypalme/adelbenyahia)
