@@ -6,11 +6,11 @@ Effortlessly create, manage, and publish captivating blog content with nextpales
 
 ### Frontend
 
-![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) [![Lexical Editor](https://badgen.net/badge/editor/Lexical%20Editor/purple)](https://example.com) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green) [![Umami](https://badgen.net/badge/analytics/Umami/orange)](https://umami.is)
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) [![Lexical Editor](https://badgen.net/badge/editor/Lexical%20Editor/purple)](https://example.com) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green) ![Client.js](https://badgen.net/badge/fingerprinting/Client.js/blue) [![Umami](https://badgen.net/badge/analytics/Umami/orange)](https://umami.is)
 
 ### Backend
 
-![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?logo=nestjs&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green) [![Signoz](https://badgen.net/badge/monitoring/Signoz/blue)](https://signoz.io)
+![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?logo=nestjs&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D.svg?logo=swagger&logoColor=black) ![2FA Enabled](https://badgen.net/badge/2FA%20Enabled/Yes/green) ![Client.js](https://badgen.net/badge/fingerprinting/Client.js/blue) [![Signoz](https://badgen.net/badge/monitoring/Signoz/blue)](https://signoz.io)
 
 ### DevOps and Deployment
 
