@@ -7,6 +7,10 @@ const config = {
   output: 'standalone',
   productionBrowserSourceMaps: false,
   //bundlePagesRouterDependencies: true,
+  compiler: {
+    removeConsole:
+      process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
+  },
   images: {
     remotePatterns: [
       {
