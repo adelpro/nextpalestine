@@ -78,7 +78,7 @@ To deploy nextpalestine using Docker, follow these steps:
    Navigate to the ./frontend directory and create a .env file using the env.example file as a template.
    Navigate to the ./backend directory and create a .env file using the env.example file as a template.
 
-   > [!TIP]
+   > [!NOTE]
    > Important: DO NOT commit this file to your version control system (e.g., Git) for security reasons.
 
 3. **Build Docker images**:
