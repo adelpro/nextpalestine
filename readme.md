@@ -60,6 +60,9 @@ Please make sure to install and configure these prerequisites before running the
 
 ### How to Run nextpalestine
 
+> [!IMPORTANT]
+> Important: DO NOT commit this file to your version control system (e.g., Git) for security reasons.
+
 Here's a basic guide on getting started with nextpalestine:
 
 1. **Clone the repository**: Use `git clone https://github.com/adelpro/nextpalestine.git` to clone the nextpalestine repository to your local machine.
