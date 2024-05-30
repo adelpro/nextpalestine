@@ -4,7 +4,7 @@
   "description": "",
   "author": "adelpro@gmail.com",
   "private": true,
-  "license": "MIT",
+  "license": "GPL",
   "engines": {
     "node": ">=18"
   },

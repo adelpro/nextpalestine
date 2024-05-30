@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "license": "GPL",
   "scripts": {
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint",

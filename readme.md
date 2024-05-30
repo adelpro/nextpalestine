@@ -1,5 +1,7 @@
 # nextpalestine: The All-in-One Blogging Platform
 
+[![GPL License](https://badgen.net/badge/license/GPL/blue)](https://www.gnu.org/licenses/gpl-3.0.html) ![npm](https://img.shields.io/badge/npm-v20%2B-blue)
+
 Effortlessly create, manage, and publish captivating blog content with nextpalestine. Our platform empowers you to focus on writing and engaging your audience, leaving the technical complexities behind.
 
 ## Technology Stack and Tools
