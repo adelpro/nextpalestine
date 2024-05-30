@@ -74,7 +74,13 @@ Here's a basic guide on getting started with nextpalestine:
 To deploy nextpalestine using Docker, follow these steps:
 
 1. **Clone the repository**: Use `git clone https://github.com/adelpro/nextpalestine.git` to clone the nextpalestine repository to your local machine.
-2. **Create a `.env` file**: Create a `.env` file in the project root directory and define any necessary environment variables (e.g., database connection string, API keys, use the `env.example` file as a template). Important: DO NOT commit this file to your version control system (e.g., Git) for security reasons.
+2. **Create a `.env` file**:
+   Navigate to the ./frontend directory and create a .env file using the env.example file as a template.
+   Navigate to the ./backend directory and create a .env file using the env.example file as a template.
+
+   > [!TIP]
+   > Important: DO NOT commit this file to your version control system (e.g., Git) for security reasons.
+
 3. **Build Docker images**:
 
    ```bash
