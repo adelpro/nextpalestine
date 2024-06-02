@@ -1,6 +1,6 @@
 # nextpalestine: The All-in-One Blogging Platform
 
-[![GPL License](https://badgen.net/badge/license/GPL/blue)](https://www.gnu.org/licenses/gpl-3.0.html) ![npm](https://img.shields.io/badge/npm-v20%2B-blue)
+[![GPL License](https://badgen.net/badge/license/GPL/blue)](https://www.gnu.org/licenses/gpl-3.0.html) ![npm](https://img.shields.io/badge/npm-v20%2B-blue) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb217913062648a984f5bac092c1e5eb)](https://app.codacy.com/gh/adelpro/nextpalestine/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 Effortlessly create, manage, and publish captivating blog content with nextpalestine. Our platform empowers you to focus on writing and engaging your audience, leaving the technical complexities behind.
 
@@ -16,7 +16,7 @@ Effortlessly create, manage, and publish captivating blog content with nextpales
 
 ### DevOps and Deployment
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff) ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb217913062648a984f5bac092c1e5eb)](https://app.codacy.com/gh/adelpro/nextpalestine/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff) ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)
 
 ## Key Features
 
