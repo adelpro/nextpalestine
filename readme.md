@@ -143,6 +143,12 @@ We welcome contributions to the nextpalestine platform! If you have suggestions 
 
 Thank you for your contributions – they make our project better!
 
+## Thank you
+
+[![Stargazers repo roster for @adelpro/check-hadith](https://reporoster.com/stars/adelpro/Openadhan)](https://github.com/adelpro/Openadhan/stargazers)
+
+[![Forkers repo roster for @adelpro/check-hadith](https://reporoster.com/forks/adelpro/Openadhan)](https://github.com/adelpro/Openadhan/network/members)
+
 ## Sponsors
 
 If you like this project, consider supporting me to continue developing and maintaining it!
