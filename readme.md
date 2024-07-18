@@ -145,9 +145,9 @@ Thank you for your contributions – they make our project better!
 
 ## Thank you
 
-[![Stargazers repo roster for @adelpro/check-hadith](https://reporoster.com/stars/adelpro/Openadhan)](https://github.com/adelpro/Openadhan/stargazers)
+[![Stargazers repo roster for @adelpro/nextpalestine](https://reporoster.com/stars/adelpro/nextpalestine)](https://github.com/adelpro/nextpalestine/stargazers)
 
-[![Forkers repo roster for @adelpro/check-hadith](https://reporoster.com/forks/adelpro/Openadhan)](https://github.com/adelpro/Openadhan/network/members)
+[![Forkers repo roster for @adelpro/nextpalestine](https://reporoster.com/forks/adelpro/nextpalestine)](https://github.com/adelpro/nextpalestine/network/members)
 
 ## Sponsors
 
